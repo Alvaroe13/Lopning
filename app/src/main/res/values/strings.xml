@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Lopning</string>
     <string name="google_maps_key">AIzaSyAGtBGWkfTq0buGttPq6rtcPOTq-yzUlIE</string>
+    <string name="needed">Please enter these values as they are necessary in order to measure your progress.</string>
 </resources>
