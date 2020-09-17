@@ -1,7 +1,8 @@
-package com.example.lopning
+package com.example.lopning.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.lopning.R
 import dagger.hilt.android.AndroidEntryPoint
 
 

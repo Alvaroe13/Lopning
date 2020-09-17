@@ -1,7 +1,6 @@
 package com.example.lopning.di
 
 import android.content.Context
-import androidx.room.Dao
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.lopning.cache.RunDao
@@ -20,16 +19,15 @@ object AppModule {
 
     @Singleton
     @Provides
-    fun provideDatabaseInstance( @ApplicationContext appContext: Context) : RoomDatabase{
-        return Room.databaseBuilder(appContext,
-                                        RunDatabase::class.java,
-                                            DATABASE_NAME).build()
-    }
+    fun provideDatabaseInstance( @ApplicationContext appContext: Context) =
+        Room.databaseBuilder(
+            appContext,
+            RunDatabase::class.java,
+            DATABASE_NAME)
+            .build()
 
     @Singleton
     @Provides
-    fun provideDao( db : RunDatabase) : RunDao  {
-        return db.getDao()
-    }
+    fun provideDao( db : RunDatabase)  = db.getDao()
 
 }
