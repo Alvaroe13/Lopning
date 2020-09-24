@@ -36,7 +36,7 @@ class RunFragment : Fragment(R.layout.fragment_run), EasyPermissions.PermissionC
     private fun requestPermission(){
 
         //if permissions are granted
-        if (PermissionHelper.generalPermissions(requireContext()) ){
+        if (PermissionHelper.locationPermissions(requireContext()) ){
             return
         }
 
